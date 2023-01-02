@@ -1,16 +1,16 @@
-#!/usr/bin/python
-def upper(string):
+#!/usr/bin/python3
+def upper(str):
 
     new_string =''
 
-    for i in range(len(string)):
+    for i in range(len(str)):
 
-        if(string[i] >= 'a' and string[i] <= 'z'):
+        if(str[i] >= 'a' and str[i] <= 'z'):
 
-            new_string = new_string + chr((ord(string[i]) - 32))
+            new_string = new_string + chr((ord(str[i]) - 32))
 
         else:
 
-            new_string = new_string + string[i]
+            new_string = new_string + str[i]
 
-            print(new_string)
+    print(new_string)
