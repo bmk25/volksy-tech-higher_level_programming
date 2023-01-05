@@ -3,7 +3,7 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, div, mul                                                                                         
     from sys import argv                                                                                                                
     if len(argv) != 4:                                                                                                                  
-        print("./100-my_calculator.py <a> <operator> <b.>")                                                                             
+        print("./100-my_calculator.py <a> <operator> <b>")                                                                             
         exit(1)                                                                                                                         
     operator = argv[2]                                                                                                                  
     n1 = int(argv[1])                                                                                                                   
