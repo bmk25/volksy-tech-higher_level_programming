@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if matrix is [[]]:
+    if len(matrix) == 1:
         print(" ")
     for i in range(len(matrix)):
         for x in range(len(matrix[i])):
