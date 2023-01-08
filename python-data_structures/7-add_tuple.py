@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def add_tuple(tuple_a = (), tuple_b = ()):
+def add_tuple(tuple_a=(), tuple_b=()):
     ls1 = list(tuple_a)
     ls2 = list(tuple_b)
     ls3 = []
