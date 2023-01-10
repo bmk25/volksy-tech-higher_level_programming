@@ -4,6 +4,6 @@ def safe_print_integer_err(value):
         if "{:d}".format(value) :
             print(value)
             return True
-    except:
-        print("Exception: Unknown format code 'd' for object of type 'str'")
+    except Exception as e:
+        print("Exception: " + str(e), file=sys.stderr)
         return False
