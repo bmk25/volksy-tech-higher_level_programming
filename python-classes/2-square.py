@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-'''Hello world '''
+#!/usr/bion/python3
+"""thsi is 2"""
 
 
 class Square:
     """helo"""
     def __init__(self, size=0):
-        try:
-            if size >= 0:
-                self.__size = size
-        except TypeError:
-                print("size must be an integer")
-        except ValueError:
-                print("size must be >= 0")
+            if type(size) is not int:
+                raise TypeError("size must be an integer")
+            if size <= 0:
+                raise TypeError("size must be >= 0")
+            self.__size = size
