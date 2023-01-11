@@ -2,6 +2,6 @@
 '''this is 0 square'''
 
 
-class square:
+class Square:
     ''' this is empty square'''
     pass
