@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ hello 3"""
 
+
 class Square:
     """helo"""
     def __init__(self, size=0):
@@ -11,7 +12,7 @@ class Square:
         return self.__size
 
     @size.setter
-    def size(self,value):
+    def size(self, value):
         if type(value) is not int:
             raise TypeError("size must be an integer")
         if value < 0:
