@@ -3,4 +3,5 @@
 
 
 def lookup(obj):
+    """ Hello """
     return (dir(obj))
