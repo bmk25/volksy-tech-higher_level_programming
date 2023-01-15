@@ -2,10 +2,8 @@
 """class-checking function."""
 
 
-def is_kind_of_class(obj, a_class):
-    """Check is an instance of a obbject 
-    ir nto
-    """
-    if isinstance(obj, a_class):
+def inherits_from(obj, a_class):
+    """Checks is subclass or not """
+    if issubclass(type(obj), a_class) and type(obj) != a_class:
         return True
     return False
