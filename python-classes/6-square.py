@@ -38,6 +38,7 @@ class Square:
     def area(self):
         a = self.__size * self.__size
         return a
+
     def my_print(self):
         """Print the square with the # character."""
         if self.__size == 0:
