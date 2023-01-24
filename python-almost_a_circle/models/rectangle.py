@@ -31,16 +31,17 @@ class Rectangle(Base):
         return self.__y
 
     @width.setter
-    def width(self, a):
+    def width(self):
         pass
 
     @height.setter
-    def height(self, a):
+    def height(self):
         pass
+
     @x.setter
-    def x(self, a):
+    def x(self:
         pass
 
     @y.setter
-    def y(self, a):
+    def y(self):
         pass
