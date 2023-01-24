@@ -80,4 +80,4 @@ class Base:
                     dicList.append(cls.create(**obj))
         except:
             dicList = []
-        return dicLis
+        return dicList
