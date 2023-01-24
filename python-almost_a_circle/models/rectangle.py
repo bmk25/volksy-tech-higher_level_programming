@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ abour rectangle """
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -12,12 +12,11 @@ class Rectangle(Base):
         self.width = width
         self.height = height
         self.x = x
-        self.y = y
-
+        self.y = y   
+    
     @property
     def width(self):
-        return self.__width
-
+        return self.__width    
     
     @width.setter
     def width(self, a):
@@ -25,12 +24,10 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         if a <= 0:
             raise ValueError("width must be > 0")
-
     
     @property
     def height(self):
         return self.__height
-    
     
     @height.setter
     def height(self, a):
@@ -38,12 +35,10 @@ class Rectangle(Base):
             raise TypeError("height must be an integer")
         if a <= 0:
             raise ValueError("height must be > 0")
-
     
     @property
     def x(self):
         return self.__x
-    
     
     @x.setter
     def x(self, a):
@@ -52,12 +47,10 @@ class Rectangle(Base):
         if a < 0:
             raise ValueError("x must be >= 0")
 
-    
     @property
     def y(self):
         return self.__y
-    
-    
+
     @y.setter
     def y(self, a):
         if type(a) != int:
