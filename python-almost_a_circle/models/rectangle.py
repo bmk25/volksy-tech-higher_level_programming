@@ -56,4 +56,4 @@ class Rectangle(Base):
         if type(a) != int:
             raise TypeError("y must be an integer")
         if a == 0:
-            raise ValueError("y must be an integer")
+            raise ValueError("y must be >= 0")
