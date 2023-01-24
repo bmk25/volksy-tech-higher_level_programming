@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" abour rectangle """
+"""
+abour rectangle
+"""
 from models.base import Base
 
 
