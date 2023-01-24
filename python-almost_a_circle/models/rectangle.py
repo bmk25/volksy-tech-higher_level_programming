@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ abour rectangle """
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -9,11 +9,18 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializer for Rectangle class"""
         super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y   
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
+
+    def area(self):
+        return(self.__width * self.__height)
     
+    def display(self):
+        for i in range(self.__height):
+                print("#"*self.__width)
+
     @property
     def width(self):
         return self.__width    
@@ -24,7 +31,7 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         if a <= 0:
             raise ValueError("width must be > 0")
-    
+
     @property
     def height(self):
         return self.__height
