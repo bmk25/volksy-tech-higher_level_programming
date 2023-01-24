@@ -39,7 +39,7 @@ class Rectangle(Base):
         pass
 
     @x.setter
-    def x(self:
+    def x(self):
         pass
 
     @y.setter
