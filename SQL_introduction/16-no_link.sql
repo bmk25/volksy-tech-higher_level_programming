@@ -1,2 +1,2 @@
 -- 16
-SELECT score,name FROM second_table where name != NULL ORDER BY score DESC;
+SELECT score,name FROM second_table WHERE name != NULL ORDER BY score DESC;
