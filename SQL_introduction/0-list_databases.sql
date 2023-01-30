@@ -1,0 +1,2 @@
+-- sanam
+SHOW DATABASES;
