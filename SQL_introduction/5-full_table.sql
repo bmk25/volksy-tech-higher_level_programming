@@ -1,2 +1,2 @@
 -- 05
-SHOW CREATE TABLE first_table;
+SHOW first_table;
