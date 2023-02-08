@@ -9,4 +9,5 @@ if __name__ == '__main__':
 	s.execute("select * from states")
 	for i in s:
 		print(i)
+        s.close()
         mydb.close() 
