@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import MySQLdb
 """ 1st     """
 from sys import argv
 import MySQLdb
