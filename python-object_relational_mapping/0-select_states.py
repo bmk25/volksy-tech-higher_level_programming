@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+''' o task'''
 if __name__ == __main__:
 	from sys import argv
 	import MySQLdb
