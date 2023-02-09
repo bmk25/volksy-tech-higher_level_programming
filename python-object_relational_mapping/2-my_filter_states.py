@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" 1st     """
+""" 1st  """
+
+
 from sys import argv
 import MySQLdb
-
-
 if __name__ == "__main__":
     mydb = MySQLdb.connect(user= argv[1],passwd=argv[2],db=argv[3])
     s = mydb.cursor()
