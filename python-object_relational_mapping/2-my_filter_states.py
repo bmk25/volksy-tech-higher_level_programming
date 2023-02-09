@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-'''
-match the naem arguments 
-'''
+''' match the naem argument '''
 
 
 import sys
