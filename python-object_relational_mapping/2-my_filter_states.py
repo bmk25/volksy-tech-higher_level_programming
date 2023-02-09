@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""task 02"""
+""" 1st     """
 from sys import argv
 import MySQLdb
 
@@ -10,4 +10,4 @@ if __name__ ==__main__:
     a = s.execute (f"SELECT * FROM states WHERE name = {argv[4]}")
     for i in a:
         print(i)
-    mydb.close()
+    mydb.close()`
