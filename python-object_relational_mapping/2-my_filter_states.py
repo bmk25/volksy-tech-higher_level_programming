@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" 02 task """
+"""02 task """
 from sys import argv
 import MySQLdb
+
 
 if __name__ ==__main__:
     mydb = MySQLdb.connect(user= argv[1],passwd=argv[2],db=argv[3])
