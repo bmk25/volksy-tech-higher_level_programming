@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 '''
-this for name matches 
+match the naem arguments 
 '''
 
 
-from sys import argv
+import sys
 import MySQLdb
+
 if __name__ == "__main__":
-    mydb = MySQLdb.connect(user= argv[1],passwd=argv[2],db=argv[3])
-    s = mydb.cursor()
-    a = s.execute (f"SELECT * FROM states WHERE name = {argv[4]} ORDER BY id ASC")
-    for i in a:
-        print(i)
-    mydb.close()`
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+    c = db.cursor()
+    c.execute("SELECT *
+                FROM states
+                WHERE BINARY name = '{}'".format(sys.argv[4]))
+    [print(state) for state in c.fetchall()]
