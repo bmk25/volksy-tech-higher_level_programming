@@ -9,7 +9,8 @@ if __name__ == "__main__":
     c = db.cursor()
     sql = "select cities.name\
            from cities inner join states on cities.state_id = cities.id\
-           where state.name binary = %(name)s ",{'name': argv[4]}
+           where state_id = (select id from states where states.name = %(name)s)",\
+           {'name': argv[4]}
     c.execute(sql)
     row = c.fetchall()
     [print(i,end=",") for i in row]
