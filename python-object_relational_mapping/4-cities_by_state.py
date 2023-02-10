@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """
 safe sql injection
 """
@@ -13,4 +13,3 @@ if __name__ == "__main__":
         print(i)
     c.close()
     db.close()
-
