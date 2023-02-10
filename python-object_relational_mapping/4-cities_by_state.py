@@ -12,8 +12,10 @@ if __name__ == "__main__":
            order by cities.state_id"
     c.execute(sql)
     e =1
-    for i in c.fetchall():
-         print(e,i)
+    row = c.fetchall()
+    for i in row:
+         row.insert(e,i[0])
+         print(i)
          e = e + 1
     c.close()
     db.close()
