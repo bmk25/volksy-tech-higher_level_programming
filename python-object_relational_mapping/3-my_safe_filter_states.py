@@ -8,9 +8,9 @@ import MySQLdb
 if __name__ == "__main__":
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
     c = db.cursor()
-    sql = "SELECT * FROM states WHERE NAME = %(name)s ORDER BY id ASC",{'name' :argv[4]}
-    c.execute(sql)
-    for i in c.fetchall:
+    c.execute("SELECT * FROM states WHERE NAME = %(name)s ORDER BY id ASC",{'name' :argv[4]})
+    row = c.fetchall()
+    for i in row:
         print(i)
-    c.close()
+    c.close(i)
     db.close()
