@@ -30,7 +30,8 @@ class Node:
 
 
 class SinglyLinkedList:
-    '''class2''' 
+    '''class2'''
+
     def __str__(self):
         rtn = ""
         ptr = self.__head
