@@ -6,6 +6,7 @@ dynmaically created attributes
 
 
 class LockedClass:
+    '''hel'''
     __slots__ = ['first_name']
 
     def __init__(self):
