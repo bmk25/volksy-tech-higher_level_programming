@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-'''Lists all States and corresponding Cities in the database '''
+'''Lists all States and corresponding 
+Cities in the database '''
 
 
 import sys
