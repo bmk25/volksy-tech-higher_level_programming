@@ -6,6 +6,7 @@ def text_indentation(text):
     for i in text:
         if i == "." or i== "?" or i== ":":
             print(i)
-            print("\n")
+            print()
+            print()
             continue
         print(i,end="")
