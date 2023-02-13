@@ -1,2 +1,7 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
->>> 
+>>> text_indentation("   Hi there.")
+    Hi there.
+    <BLANKLINE> 
+>>> text_indentation("          ")
+
+Similarly, no spaces are printed at the end of each printed line.
